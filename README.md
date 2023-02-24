@@ -1,2 +1,1 @@
-# Calmberries
-Vue.js v.3 Internet Shop (practice)
+## Практика Vue 3
