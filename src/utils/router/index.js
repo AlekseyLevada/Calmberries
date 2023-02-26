@@ -22,7 +22,7 @@ component:HelloWorld,
 ]
 
 const router = createRouter({
-    //history:createWebHistory(),
+    history:createWebHistory(),
     routes:routes,
 })
 
