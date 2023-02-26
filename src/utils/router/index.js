@@ -1,15 +1,13 @@
 import {createWebHistory, createRouter} from 'vue-router'
 
-import { App } from '../../../src/App.vue'
-//import HelloWorld from '../../components/HelloWorld.vue'
+import HelloWorld from '../../components/HelloWorld.vue'
 import NewsList from '../../components/NewsList.vue'
 import NewsItem from '../../components/NewsItem.vue'
 
 const routes = [{
 path:'/',
 name:'Home',
-//component:HelloWorld,
-component:App,
+component:HelloWorld,
 },
 {
     path:'/news',
