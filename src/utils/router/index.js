@@ -5,17 +5,17 @@ import NewsList from '../../components/NewsList.vue'
 import NewsItem from '../../components/NewsItem.vue'
 
 const routes = [{
-path:'Calmberries/',
+path:'/',
 name:'Home',
 component:HelloWorld,
 },
 {
-    path:'Calmberries/news',
+    path:'/news',
     name:'News',
     component:NewsList,
 },
 {
-    path:'Calmberries/news/:id',
+    path:'/news/:id',
     name:'NewsItem',
     component:NewsItem,
 },
