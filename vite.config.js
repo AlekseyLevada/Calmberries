@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  publicPath:'/Calmberries/',
+  publicPath:'/Calmberries',
   //publicDir:'/Calmberries/',
   //base:'/Calmberries/',
   plugins: [vue()]
