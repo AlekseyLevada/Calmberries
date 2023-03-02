@@ -1,4 +1,6 @@
-import {createWebHistory, createRouter} from 'vue-router'
+// Добавил createWebHashHistory для работы роутера на GitHub Pages
+
+import { createWebHashHistory, createWebHistory, createRouter} from 'vue-router'
 
 import HelloWorld from '../../components/HelloWorld.vue'
 import NewsList from '../../components/NewsList.vue'
@@ -22,7 +24,7 @@ component:HelloWorld,
 ]
 
 const router = createRouter({
-    history:createWebHistory(),
+    history:createWebHashHistory(),
     routes:routes,
 })
 
