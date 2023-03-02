@@ -39,9 +39,9 @@ export default {
         <div class="card__container">
             <div class="card" v-for='item in list' :key="item.id">
                 <img :src='item.image' :alt='item.title'>
-                <h4>
+                <p>
                     {{ item.id }} {{ item.title }}
-                </h4>
+                </p>
                 <router-link :to="'/news/' + item.id">
                     <div class="detailBtn">
                         Подробнее
@@ -56,4 +56,10 @@ export default {
 .news__container {
     padding: 20px;
 }
+.card__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 </style>
