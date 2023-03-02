@@ -33,14 +33,16 @@ export default {
 <template>
     <loader v-if="list.length == 0"></loader>
     <div class="news__container">
-        <div>
-            <h1 v-if="list.length != 0">{{ title }}</h1>
+        <div class='title__container'>
+            <h1 v-if="list.length != 0">
+                {{ title }}
+            </h1>
         </div>
         <div class="card__container">
             <div class="card" v-for='item in list' :key="item.id">
                 <img :src='item.image' :alt='item.title'>
                 <p>
-                    {{ item.id }} {{ item.title }}
+                    {{ item.title }}
                 </p>
                 <router-link :to="'/news/' + item.id">
                     <div class="detailBtn">
@@ -54,7 +56,11 @@ export default {
 
 <style scoped>
 .news__container {
-    padding: 20px;
+    padding: 10px;
+}
+
+.title__container {
+    margin-bottom: 20px;
 }
 .card__container {
     display: flex;

@@ -13,10 +13,11 @@ html body {
 html body h1 {
   text-align: center;
   color: beige;
+  font-size: 25px;
 }
 html body .card {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   border-radius: 5px;
@@ -25,21 +26,16 @@ html body .card {
   border: 2px solid beige;
   padding: 10px;
   margin: 10px;
-  width: 250px;
+  width: 350px;
   transition: 0.5s;
-}
-html body .card:hover {
-  transform: scale(1.02);
-  transition: 0.3s;
 }
 html body .card p {
   text-align: center;
-  margin: 15px 0px;
+  padding: 10px;
   color: beige;
-  max-width: 150px;
 }
 html body .card img {
-  width: 150px;
+  width: 200px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px #000;
   border: 2px solid beige;
