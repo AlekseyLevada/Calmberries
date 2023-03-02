@@ -10,19 +10,8 @@ html body {
   color: #FDFEFE;
 }
 html body h1 {
-  position: relative;
   text-align: center;
-  margin: 30px 0px;
   color: beige;
-}
-html body h1::after {
-  content: "";
-  background-color: #AE533C;
-  width: 7%;
-  height: 4px;
-  position: absolute;
-  bottom: -20px;
-  left: 47%;
 }
 html body .card__container {
   display: flex;
@@ -117,6 +106,9 @@ html body .detail-item__container .product-item__container .container-detail-inf
 }
 html body .detail-item__container .product-item__container .container-detail-info .table .tr .tc:first-child {
   width: 20%;
+}
+html body .switch {
+  margin: 100px auto;
 }
 html body .switch .detailBtn {
   text-align: center;

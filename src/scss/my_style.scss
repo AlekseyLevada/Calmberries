@@ -11,20 +11,8 @@ html {
         color: #FDFEFE;
 
         h1 {
-            position: relative;
             text-align: center;
-            margin: 30px 0px;
             color: beige;
-
-            &::after {
-                content: '';
-                background-color: #AE533C;
-                width: 7%;
-                height: 4px;
-                position: absolute;
-                bottom: -20px;
-                left: 47%;
-            }
         }
 
         .card__container {
@@ -141,6 +129,7 @@ html {
         }
 
         .switch {
+            margin: 100px auto;
             .detailBtn {
                 text-align: center;
                 cursor: pointer;
