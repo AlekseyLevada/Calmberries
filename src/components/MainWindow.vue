@@ -73,4 +73,10 @@ a div.detailBtn {
   box-shadow: 0px 0px 7px #FDFEFE;
   transition: .1s;
 }
+
+@media (min-width:320px) and (max-width:480px){
+    .switch h1 {
+        font-size: 60px;
+    }
+}
 </style>
