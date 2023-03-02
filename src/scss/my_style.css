@@ -24,18 +24,21 @@ html body .card {
   background-color: #6C757D;
   box-shadow: 0px 0px 10px #000;
   border: 2px solid beige;
-  padding: 10px;
+  padding: 20px;
   margin: 10px;
   width: 350px;
   transition: 0.5s;
 }
 html body .card p {
   text-align: center;
-  padding: 10px;
+  max-width: 300px;
   color: beige;
+  margin-bottom: 10px;
 }
 html body .card img {
-  width: 200px;
+  width: 150px;
+  height: 200px;
+  margin-bottom: 10px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px #000;
   border: 2px solid beige;

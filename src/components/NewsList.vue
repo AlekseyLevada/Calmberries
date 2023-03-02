@@ -40,10 +40,10 @@ export default {
         </div>
         <div class="card__container">
             <div class="card" v-for='item in list' :key="item.id">
-                <img :src='item.image' :alt='item.title'>
                 <p>
                     {{ item.title }}
                 </p>
+                <img :src='item.image' :alt='item.title'>
                 <router-link :to="'/news/' + item.id">
                     <div class="detailBtn">
                         Подробнее
