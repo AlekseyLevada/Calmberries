@@ -8,7 +8,9 @@ export default {
     beforeMount: function() {
         axios.get(`https://fakestoreapi.com/products/${this.$route.params.id}`)
         .then( response => {
-            this.data = response.data
+            setTimeout(() => {
+                this.data = response.data 
+            }, 2000)
         })
     },
     data() {
