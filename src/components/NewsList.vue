@@ -62,10 +62,10 @@ export default {
 .title__container {
     margin-bottom: 20px;
 }
+
 .card__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 </style>
