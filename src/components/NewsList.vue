@@ -33,7 +33,7 @@ export default {
 </script>
 
 <template>
-    <loader v-if="list.length == 0"></loader>
+    <loader v-if="list.length == 0" />
     <div class="news__container">
         <div class='title__container'>
             <h1 v-if="list.length != 0">
@@ -59,10 +59,6 @@ export default {
 <style scoped>
 .news__container {
     padding: 10px;
-}
-
-.title__container {
-    margin-bottom: 20px;
 }
 
 .card__container {
