@@ -1,21 +1,19 @@
 <script>
-import axios from 'axios'
+import usersReviews from '../../stub/comments.json'
 
 export default {
     beforeMount: function () {
-        //console.log(this)
-        //console.log(this.id)
+        // console.log(this)
+        // console.log(this.id)
+
         if (this?.id) {
-            axios.get('http://localhost:5173/stub/comments.json')
-                .then(response => {
-                    const filteredArray = response.data.list.filter(element => {
-                        //console.log( element.product_id == this?.id)
-                        return element.product_id == this?.id
-                    })
-                    //console.log(response.data.list)
-                    this.list = filteredArray
-                    this.count = filteredArray.length
-                })
+            const filteredArray = usersReviews.list.filter(element => {
+                //console.log( element.product_id == this?.id)
+                return element.product_id == this?.id
+            })
+            //console.log(response.data.list)
+            this.list = filteredArray
+            this.count = filteredArray.length
         }
     },
     data() {
