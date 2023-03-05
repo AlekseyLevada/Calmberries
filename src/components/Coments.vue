@@ -63,7 +63,7 @@ export default {
 
 <style scoped>
 p {
-    line-height: 25px;
+    line-height: 20px;
 }
 
 .comments__item {

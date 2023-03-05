@@ -197,8 +197,8 @@ export default {
     .table {
         font-size: 12px;
     }
-    
-    .tr .tc {
+
+    .tr .tc{
         width: 100%;
     }
 }
