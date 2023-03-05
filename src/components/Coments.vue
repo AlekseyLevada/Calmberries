@@ -62,10 +62,6 @@ export default {
 </template>
 
 <style scoped>
-h2 {
-    text-align: center;
-}
-
 p {
     line-height: 25px;
 }
@@ -93,4 +89,36 @@ p {
     border-radius: 50%;
     margin-right: 20px;
     margin-bottom: 10px;
-}</style>
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .comments__container {
+        font-size: 12px;
+    }
+
+    .comments__item {
+        flex-direction: column;
+    }
+
+    .item__avatar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item__text-section p {
+        margin-left: 0px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .item__text-section p:last-child {
+        text-align: justify;
+    }
+}
+</style>
